@@ -1,0 +1,27 @@
+{
+  "name": "mhq.be",
+  "version": "1.0.0",
+  "description": "url shortner for makerhq.org",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/makerhqsac/mhq.be.git"
+  },
+  "author": "Sam Thompson <git@samt.us>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/makerhqsac/mhq.be/issues"
+  },
+  "homepage": "https://github.com/makerhqsac/mhq.be#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "debug": "^2.2.0",
+    "express": "^4.14.0",
+    "morgan": "^1.7.0",
+    "sqlite3": "^3.1.4"
+  }
+}
