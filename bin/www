@@ -1,0 +1,21 @@
+#!/usr/bin/env node
+
+const app = require('../app');
+const debug = require('debug')('mhq.be:server');
+const http = require('http');
+
+const port = process.env.PORT || 3000;
+app.set('port', port);
+
+const server = http.createServer(app);
+
+server.listen(port);
+
+server.on('error', function (err) {
+  // maybe use this someday
+  throw err;
+});
+
+server.on('listening', function () {
+   debug('Listening on port ' + port);
+});
